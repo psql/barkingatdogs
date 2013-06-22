@@ -1,0 +1,65 @@
+html{
+	padding: 0;
+	margin: 0;
+}
+body{
+	background-color: #9BA6CE;
+	font-family: "omnes-pro",sans-serif;
+	font-style: normal;
+	font-weight: 400;
+}
+#header{
+	border-top: 15px solid #5E5FA3;
+	background-color: #AAB9D9;
+	width: 100%;
+	padding: 35px 0;
+}
+
+#logo{
+	width: 314px;
+	height: 96px;
+	margin: 0 auto;
+	display: block;
+	margin-bottom: 30px;
+}
+
+nav{
+	text-align: center;
+}
+nav img{
+	margin: 0 7px;
+}
+
+/*todo - animation on hover*/
+
+#content{
+	padding-top: 50px;
+	width: 640px;
+	margin: 0 auto;
+}
+
+article{
+	width: 640px;
+	margin: 0 auto;
+}
+
+article p{
+	color: #3D4562;
+	font-size: 22px;
+	line-height: 26px;
+	font-family: "omnes-pro",sans-serif;
+	font-style: normal;
+	font-weight: 400;
+}
+article iframe{
+	border: 3px solid #5F60A4;
+	margin-bottom: 20px;
+}
+
+article h2{
+	font-size: 36px;
+	color: #fff;
+	margin-bottom: 10px;
+	font-family: "omnes-pro",sans-serif;
+	font-weight: 600;
+}
