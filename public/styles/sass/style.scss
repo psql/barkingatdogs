@@ -1,0 +1,94 @@
+@import "compass/reset";
+
+$red: #C82F2A;
+$hover: #222;
+$brown: darken(#BFA196,20%);
+$border: #BFA196;
+$mainType: #6F4633;
+
+html {
+  background-color: #FFF8E6;
+  border-top: 5px solid $red;
+  font-size: 16px;
+
+  body {
+    width: 960px;
+    margin: 0 auto;
+
+    header {
+      height: 150px;
+      padding-top: 50px;
+
+      #logo {float: left;}
+
+      nav {
+        float: right;
+        border-bottom: 1px dashed $border;
+        font-family: Gotham;
+        font-size: 1.3em;
+        font-weight: 500;
+        text-transform: uppercase;
+        padding-bottom: 1em;
+        margin-top: 40px;
+
+          a {
+            text-decoration: none;
+            color: $red;
+
+            &:hover {
+              color: #000;
+            }
+          }
+
+          a+a {
+            margin-left: 1em;
+          }
+      }
+    }
+
+    #main {
+        font-family: "ChronicleDisplay";
+        padding-bottom: 150px;
+
+        a {
+            color: $red;
+
+            &:hover {
+                color: $hover;
+            }
+        }
+
+        // VIDEO
+        iframe {
+            margin-bottom: 35px;
+        }
+
+        #meta {
+            width: 600px;
+            float: left;
+
+            #headings {
+                font-family: "ChronicleDisplay-Italic";
+
+                h2 {
+                    font-size: 30px;
+                    color: $red;
+                    line-height: 40px;
+                    text-transform: uppercase;
+                    margin-bottom: .1em;
+                }
+                h3 {
+                    font-size: 18px;
+                    color: $brown;
+                    margin-bottom: 1em;
+                }
+
+            }
+            p {
+                font-size: 1.2em;
+                color: $mainType;
+            }
+        }
+    }
+  }
+}

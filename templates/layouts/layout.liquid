@@ -2,14 +2,29 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>{% block title %}Mixture + Compass{% endblock %}</title>
-        {{ "your-project.css" | asset_url | stylesheet_tag }}
+        <title>Barking at Dogs</title>
+        {{ "style.css" | asset_url | stylesheet_tag }}
         <!-- TODO: Complete this project :) -->
     </head>
-    <body class="wrapper">
-        {% include "navigation" %}
-        <div class="container">
-            {% block content %}{% endblock %}
+    <body>
+        {% include "header" %}
+
+        <div id="main">
+
+            <section id="episode">
+                <!-- video -->
+                <iframe src="//player.vimeo.com/video/78547347?title=0&amp;byline=0&amp;portrait=0&amp;color=e64732" width="960" height="540" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+                <aside id="meta">
+                    <div id="headings">
+                        <h2>Dog Tech</h2>
+                        <h3>Episode 3</h3>
+                    </div>
+                    <p><a href="#">Addison</a> visits San Francisco to roadtest the latest in dog tech products.</p>
+                </aside>
+            </section>
+
+            <!-- {% block content %}{% endblock %} -->
         </div>
     </body>
 </html>
